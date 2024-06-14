@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="cart.html">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section id="header" class="container-fluid">
+
+        <a href="#"><img src="img/logo.png" class="logo" alt="" height="100px"></a>
+        <!-- <a href=""><img src="img/Flora logo.png" alt="" height="50px"></a> -->
+        <div>
+            <ul id="navbar">
+               <li><a   href="index.html">Home</a></li>
+               <li><a class=" active" href="shop.html">Shop</a> </li>
+               <li><a href="about.html">About</a> </li>
+               <li><a href="contact.html">Contact Us</a></li>
+               <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true" ></i> </a></li>
+
+            </ul>
+        </div>
+    </section>
+    <section  class="shop">
+
+        <div class="filter">
+            <h3>Filter</h3>
+            <details class="dropdown">
+                <summary>Product Type</summary>
+                <div class="dropdown-content">
+                    <label><input type="checkbox" value="Rings" class="filter-checkbox"> Rings</label>
+                    <label><input type="checkbox" value="Bracelets" class="filter-checkbox"> Bracelets</label>
+                    <label><input type="checkbox" value="necklace" class="filter-checkbox"> Necklace</label>
+                    <label><input type="checkbox" value="Earings" class="filter-checkbox"> Earrings</label>
+                </div>
+            </details>
+        </div>
+
+        <div class="products">
+            <div class="item item1"  data-id="1" data-category="Earings Necklace" onclick="window.location.href='productsDes.html?class=section-p1'">
+                <img src="jewel1.jpg" alt="">
+                <div id="des">
+                    <h5>Earings with pearl necklace</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 999</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+    
+            <div class="item item2"  data-id="2" data-category="Earings " onclick="window.location.href='sproduct.html?class=section-p1'">
+                <img src="jewel2.jpg" alt="">
+                <div id="des">
+                    <h5>Pearl Earrings</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 499</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+    
+            <div class="item item3"  data-id="3" data-category="necklace">
+                <img src="jewel3.jpg" alt="">
+                <div id="des">
+                    <h5>Golden necklace</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 599</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+    
+            <div class="item item3"  data-id="4" data-category="Earings">
+                <img src="jewel19 (1).png" alt="">
+                <div id="des">
+                    <h5>Greem Asian Earrings</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 999</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+
+            <div class="item item3" data-id="5" data-category="Rings">
+                <img src="jewel4.jpg" alt="">
+                <div id="des">
+                    <h5>Minimal rings set</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 450</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3"data-id="6"  data-category="Earings necklace">
+                <img src="jewel5.jpg" alt="">
+                <div id="des">
+                    <h5>Earings with pearl necklace</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 1499</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3" data-id="7" data-category="Bracelets">
+                <img src="jewel6.jpg" alt="">
+                <div id="des">
+                    <h5>Minimal Peral Bracelet</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3" data-id="8" data-category="Rings">
+                <img src="jewel7.jpg" alt="">
+                <div id="des">
+                    <h5>Minimal Double Ring set </h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3" data-id="9" data-category="Earings">
+                <img src="jewel8.jpg" alt="">
+                <div id="des">
+                    <h5>Pearl Earrings</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 1299</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3"  data-id="10" data-category="Earings">
+                <img src="jewel9.jpg" alt="">
+                <div id="des">
+                    <h5> Golden Abstract Earings</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3" data-id="11" data-category="Earings">
+                <img src="jewel10.jpg" alt="">
+                <div id="des">
+                    <h5>Golden Ring Earrings</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3" data-id="12" data-category="necklace">
+                <img src="jewel11.jpg" alt="">
+                <div id="des">
+                    <h5>Heart necklace</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+
+            <div class="item item3" data-id="13" data-category="Earings">
+                <img src="jewel12.jpg" alt="">
+                <div id="des">
+                    <h5>Bridal Brown Earrings</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3"  data-id="14" data-category="Earings">
+                <img src="jewel13.jpg" alt="">
+                <div id="des">
+                    <h5>Pearl Wedding Earings </h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+            <div class="item item3"  data-id="15" data-category="Earrings">
+                <img src="jewel14.jpg" alt="">
+                <div id="des">
+                    <h5>Wedding Brown Earrings</h5>
+                    <div id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Rs. 799</h4>
+                </div>
+                <button class="addcart">Add to Cart</button>
+                <!-- <a href="#"><i class="fa-solid fa-cart-shopping " id="cart"></i></a> -->
+            </div>
+        </div>
+
+       
+    </section>
+
+    <script>
+        // JavaScript code to handle redirection and adding items to cart
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add event listeners to items for navigation
+            const items = document.querySelectorAll('.item');
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    const className = 'section-p1'; // Modify based on your requirement
+                    window.location.href = sproduct.html?class=${className};
+                });
+            });
+
+            // Add event listeners to "Add to Cart" buttons
+            const addCartButtons = document.querySelectorAll('.addcart');
+            addCartButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.stopPropagation(); // Prevent the click event from bubbling up to the item click handler
+                    addToCart(event.target);
+                });
+            });
+        });
+
+        // Function to handle "Add to Cart"
+        function addToCart(button) {
+            // Assuming you have some cart functionality
+            alert('Item added to cart!'); // Simple feedback for the demo
+
+            // Further code to handle adding item to the cart
+            // For example, updating cart icon, storing in localStorage, etc.
+        }
+
+        // Function to navigate to a section based on class name in query parameter
+        function navigateToSection() {
+            const params = new URLSearchParams(window.location.search);
+            const className = params.get('class');
+
+            if (className) {
+                const element = document.querySelector(.${className});
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+
+        // Execute navigation to section on page load (for sproduct.html)
+        if (window.location.pathname.includes('sproduct.html')) {
+            document.addEventListener('DOMContentLoaded', navigateToSection);
+        }
+
+    //     document.addEventListener('DOMContentLoaded', () => {
+    //     const filterCheckboxes = document.querySelectorAll('.dropdown-content input[type="checkbox"]');
+    //     const products = document.querySelectorAll('.products .item');
+
+    //     filterCheckboxes.forEach(checkbox => {
+    //         checkbox.addEventListener('change', filterProducts);
+    //     });
+
+    //     function filterProducts() {
+    //         const selectedCategories = Array.from(filterCheckboxes)
+    //             .filter(checkbox => checkbox.checked)
+    //             .map(checkbox => checkbox.value.toLowerCase());
+
+    //         products.forEach(product => {
+    //             const productCategories = product.getAttribute('data-category').split(' ');
+    //             const matches = selectedCategories.some(category => productCategories.includes(category));
+                
+    //             if (selectedCategories.length === 0 || matches) {
+    //                 product.style.display = 'block';
+    //             } else {
+    //                 product.style.display = 'none';
+    //             }
+    //         });
+    //     }
+    // });
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const filterCheckboxes = document.querySelectorAll('.dropdown-content input[type="checkbox"]');
+    const products = document.querySelectorAll('.products .item');
+
+    filterCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', filterProducts);
+    });
+
+    function filterProducts() {
+        const selectedCategories = Array.from(filterCheckboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value.toLowerCase());
+
+        products.forEach(product => {
+            const productCategories = product.getAttribute('data-category').toLowerCase().split(' ');
+            const matches = selectedCategories.some(category => productCategories.includes(category));
+            
+            if (selectedCategories.length === 0 || matches) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+});
+
+
+
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const addCartButtons = document.querySelectorAll('.addcart');
+
+        addCartButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent the click event from bubbling up to the item click handler
+                addToCart(event.target.closest('.item'));
+            });
+        });
+
+        function addToCart(item) {
+            const product = {
+                id: item.dataset.id,
+                image: item.querySelector('img').src,
+                name: item.querySelector('h5').innerText,
+                price: item.querySelector('h4').innerText,
+                quantity: 1
+            };
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingProductIndex = cart.findIndex(p => p.id === product.id);
+
+            if (existingProductIndex > -1) {
+                cart[existingProductIndex].quantity += 1;
+            } else {
+                cart.push(product);
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Item added to cart!');
+        }
+    });
+    document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                filterProducts();
+            });
+        });
+
+        function filterProducts() {
+            const selectedCategories = Array.from(document.querySelectorAll('.filter-checkbox:checked'))
+                .map(checkbox => checkbox.value);
+
+            document.querySelectorAll('.item').forEach(item => {
+                const itemCategories = item.getAttribute('data-category').split(' ');
+                if (selectedCategories.length === 0 || selectedCategories.some(category => itemCategories.includes(category))) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+</script>
+
+    
+</body>
+</html>

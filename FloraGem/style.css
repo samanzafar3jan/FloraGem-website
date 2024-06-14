@@ -1,0 +1,405 @@
+/* header section start */
+
+@media (max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width:300px ;
+        background-color: rgb(171, 211, 25);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0  10px;
+        transition: 0.3s;
+
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #close{
+        display: initial;
+    }
+   
+    #navbar li{
+        margin-bottom: 25px;
+
+    }
+    #header #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #header #mobile  i{
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color:black ;
+        font-size: 24px;
+
+    }
+    #lg-bag{
+        display: none;
+    }
+    #product1 .pro-container {
+        gap: 0px;
+        justify-content: center;
+        
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background: rgb(171, 211, 25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+   height: 50px;
+   z-index: 1000;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;  
+    position: relative;  //for child tag to underline in the anchor tag
+}
+#navbar li a{
+    font-weight: 600px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    
+
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: cadetblue;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background:  cadetblue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+#product1{
+    text-align: center;
+
+}
+#product1 h2{
+    padding-top: 80px;
+}
+#product1 .pro{
+    width:23px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.02) ;
+    margin: 15px 0px;
+    transition: 0.2s ease;
+    position: relative; // for cart in the featured product
+    background-size: cover;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px opx;
+}
+#product1 .pro .des span{
+    color: chocolate;
+    font-size: 12px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgba(248, 248, 36, 0.856);
+}
+#product1 .pro:hover{
+    
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.06) ;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    height: 60%;
+    
+}
+#product1 .pro .des h3{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: darkcyan;
+}
+#product1 .pro .cart{
+    width: 100px;
+    height: 20px;
+    line-height: 15px;
+    border-radius: 50px;
+    background-color: bisque;
+    font-weight: 500;
+    color: darkcyan;
+    border: 1px solid rgb(209, 209, 201);
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+
+
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    /* gap: 20px;  */
+    /* padding-left: 50px;
+    padding-right: 50px; */
+
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* color: rgb(219, 155, 18); */
+    background-image: url("img/newsletter\ img.jpeg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-size: cover;
+    padding: 50px;
+
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight:700 ;
+    color: rgb(245, 245, 17);
+
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight:600 ;
+    color: rgb(250, 250, 114);
+
+}
+#newsletter p span{
+    
+    color: rgb(39, 231, 103);
+
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-color: chocolate;
+    border-radius: 4px;
+    outline: none;
+}
+#newsletter button{
+    background-color: coral;
+    color: azure;
+    white-space: nowrap;
+    
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+
+
+/* cart  Page */
+
+@media (max-width:799px){
+    #cart table {
+        /* margin: 30px; */
+
+        
+        text-align: center;
+        margin-top: 18px;
+    }
+    #cart table td{
+        padding-left:20px ;
+        padding-right: 20px;
+    }
+    #cart-add{
+        margin-left:5px;
+        padding-right: 5px;
+       
+
+    }
+}
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    /* table-layout: fixed; */
+    white-space: nowrap;
+    margin-top: 18px;
+
+
+}
+#cart table img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5)
+#cart table td:nth-child(6)
+{
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width:70px;
+    padding: 10px 5px 10px 15px;
+
+}
+#cart  table thead {
+    border: 1px solid hsla(0, 76%, 5%, 0.795);
+    border-left: none;
+    border-right: none;
+}
+#cart  table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+
+}
+#cart  table tbody tr td{
+padding-top: 15px;
+
+}
+#cart  table tbody td{
+    font-size: 13px;
+}
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+  #cart-add #coupon{
+width: 50%;
+margin-top: 30px;
+}
+#coupon input{
+    padding: 10px 40px;
+    margin-right: 5px;
+    outline: none;
+    margin-right: 10px;
+    border: 1px solid #0a0a0a;
+    border-radius: 10px;
+
+
+}
+#coupon button,#subtotal button{
+    background-color: lightseagreen;
+    color: hsl(60, 100%, 2%);
+    padding: 12px 20px;
+    border-radius: 10px;
+
+
+}
+#subtotal{
+    width: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #888484;
+    padding: 30px;
+    /* margin-right: 3px; */
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+
+/* checkout css  */
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn{
+    color: aliceblue;
+    background-color: #da833c;
+    
+}
+
+
+
+
+
+
+
+

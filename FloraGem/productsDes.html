@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+    <link rel="stylesheet" href="shop.css">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section id="header" class="container-fluid">
+
+        <a href="#"><img src="img/logo.png" class="logo" alt="" height="100px"></a>
+        <!-- <a href=""><img src="img/Flora logo.png" alt="" height="50px"></a> -->
+        <div>
+            <ul id="navbar">
+               <li><a   href="index.html">Home</a></li>
+               <li><a class=" active" href="shop.html">Shop</a> </li>
+               <li><a href="about.html">About</a> </li>
+               <li><a href="contactUS.html">Contact Us</a></li>
+               <li><a href=""></a><i class="fa fa-shopping-bag" aria-hidden="true" ></i> </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="jewel18.jpg"  width="100%"  id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="jewel19 (1).png" width="100%" class="small-img" alt="">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="jewel19 (2).png" width="100%" class="small-img" alt="">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="jewel19 (3).png" width="100%" class="small-img" alt="">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="jewel19 (4).png" width="100%" class="small-img" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home/ Neclace</h6>
+            <h4>Pearl Necklace</h4>
+            <h2>Rs. 1299</h2>
+            <select >
+                <option >Select Option</option>
+                <option >Golden</option>
+                <option >Silver</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add to cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam fugit facere quas! Velit vero dolorum odit perspiciatis voluptatum. Corporis omnis ducimus blanditiis optio hic? Repellat animi neque aliquid voluptate?</span>
+        </div>
+
+    </section>
+
+    <!-- <section id="prodetails" class="section-p2">
+        <div class="single-pro-image">
+            <img src="jewel14.jpg"  width="100%"  id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="jewel5.jpg" width="100%" class="small-img" alt="">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="jewel7.jpg" width="100%" class="small-img" alt="">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="jewel8.jpg" width="100%" class="small-img" alt="">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="jewel9.jpg" width="100%" class="small-img" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home/ Neclace</h6>
+            <h4>Pearl Necklace</h4>
+            <h2>Rs. 1299</h2>
+            <select >
+                <option >Select Option</option>
+                <option >Golden</option>
+                <option >Silver</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add to cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam fugit facere quas! Velit vero dolorum odit perspiciatis voluptatum. Corporis omnis ducimus blanditiis optio hic? Repellat animi neque aliquid voluptate?</span>
+        </div>
+
+    </section> -->
+
+    <script>
+        var MainImg= document.getElementById("MainImg");
+        var smallimg= document.getElementsByClassName("small-img")
+        smallimg[0].onclick = function(){
+            MainImg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src=smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src=smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src=smallimg[3].src;
+        }
+    </script>
+  
+
+
+    
+</body>
+</html>
